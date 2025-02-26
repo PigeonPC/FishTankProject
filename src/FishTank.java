@@ -13,12 +13,6 @@ public class FishTank {
         this.waterQuality = waterQuality;
     }
 
-
-
-
-
-
-
     //Change water method
     public String changeWater(){
 
@@ -30,8 +24,7 @@ public class FishTank {
         return lastWaterChange;
     }
 
-
     public String toString() {
-        return .........
+        return null;
     }
 }
