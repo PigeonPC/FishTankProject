@@ -13,12 +13,25 @@ public class FishTank {
         this.waterQuality = waterQuality;
     }
 
-    LocalDateTime.now.changeWater()
+
+
+
+
 
 
     //Change water method
     public String changeWater(){
 
+        LocalDateTime localDate = LocalDateTime.now();
+
+        //Sætter lastWaterChange til at være localDate i String form:
+        this.lastWaterChange = localDate.toString();
+
         return lastWaterChange;
+    }
+
+
+    public String toString() {
+        return .........
     }
 }
