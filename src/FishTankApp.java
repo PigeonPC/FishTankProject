@@ -5,12 +5,12 @@ public class FishTankApp {
 
 
 
-//    public static void main(String[] args) {
-//
-//        fishTankApp();
-//
-//
-//    }
+    public static void main(String[] args) {
+
+        fishTankApp();
+
+
+    }
 
     public static void fishTankApp() {
 
@@ -81,7 +81,7 @@ public class FishTankApp {
         System.out.println("2.  Update fish health");
         System.out.println("3.  Change  water");
         System.out.println("4.  View last water change");
-        System.out.println("5.  Exit"\n);
+        System.out.println("5.  Exit\n");
 
 
     }
