@@ -1,16 +1,20 @@
+import java.util.Scanner;
+
 public class FishTankApp {
 
 
 
 
-    public static void main(String[] args) {
-
-        fishTankApp();
-
-
-    }
+//    public static void main(String[] args) {
+//
+//        fishTankApp();
+//
+//
+//    }
 
     public static void fishTankApp() {
+
+        Scanner in = new Scanner(System.in);
 
         int menuChoice;
         boolean flagAppOn = true;
@@ -18,7 +22,7 @@ public class FishTankApp {
         do {
 
             printMenuOptions();
-            menuChoice = getMenuChoice(1, 4);
+            menuChoice = getMenuChoice(in, 1, 4);
 
 
             if (menuChoice == 1) {
@@ -71,18 +75,30 @@ public class FishTankApp {
 
     public static void printMenuOptions() {
 
-        // TODO
-        // Print menu options
-//        1.  Viewing fish status
-//        2.  Updating  fish health
-//        3.  Changing  water
-//        4.  Viewing last water change
-//        5.  Exiting
-        //System.out.println("fill out menu options here and ask for input");
+        System.out.println("Hello Diana! Choose an option from the menu:");
+        System.out.println();
+        System.out.println("1.  View fish status");
+        System.out.println("2.  Update fish health");
+        System.out.println("3.  Change  water");
+        System.out.println("4.  View last water change");
+        System.out.println("5.  Exit"\n);
+
 
     }
 
-    public static int getMenuChoice(int min, int max) {
+    public static int getMenuChoice(Scanner in, int min, int max) {
+
+        while (true) {
+            if (in.hasNextInt()) {
+                break;
+            } else {
+                String tempString = in.next();
+            }
+
+
+
+
+        }
 
         // TODO
         // use scanner to get an int and validate the input range and type
