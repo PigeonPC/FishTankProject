@@ -2,6 +2,8 @@ import java.time.LocalDateTime;
 
 public class FishTank {
     //Olga og Silke
+    public static final String[] WATERQUALITY = {
+            null, "perfect", "good", "okay", "bad"};
 
     //Attributes
     private String lastWaterChange;
@@ -14,17 +16,21 @@ public class FishTank {
     }
 
     //Change water method
-    public String changeWater(){
-
+    public void changeWater(){
         LocalDateTime localDate = LocalDateTime.now();
-
         //Sætter lastWaterChange til at være localDate i String form:
         this.lastWaterChange = localDate.toString();
-
-        return lastWaterChange;
+        System.out.println(lastWaterChange);
     }
 
     public String toString() {
         return null;
     }
+
+    /**
+     * public static void main(String [] args){
+     *         FishTank tank = new FishTank("a", "a");
+     *         tank.changeWater();
+     *     }
+     */
 }
