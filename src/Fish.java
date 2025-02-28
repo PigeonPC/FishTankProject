@@ -37,14 +37,14 @@ public class Fish {
 
 
         } else if (responds.equalsIgnoreCase("No\n")) {
-            System.out.println(getHealthStatus());
-        } else System.out.println("Invalid answer!!!\n");
-        {
+            System.out.println("No chance was made" + healthStatus);
 
-        }
+        } else System.out.println("Invalid answer!!!\n");
+        scanner.close();
 
     }
 
+    @Override
     public String toString() {
         return "Fish ( name = " + name + ") healthStatus = " + healthStatus + ")";
     }
@@ -52,7 +52,7 @@ public class Fish {
 
 
 
-        System.out.println(Fish.getName()+" is "+Fish.getHealthStatus());
+        /* System.out.println(Fish.getName()+" is "+Fish.getHealthStatus());
 
         fish1.updateHealthStatus();
         LocalDateTime now = LocalDateTime.now();
@@ -65,8 +65,8 @@ public class Fish {
         System.out.println(fish2.getName()+" is "+fish2.getHealthStatus());
 
         fish2.updateHealthStatus();
-        System.out.println(fish2.getName()+" is now "+fish2.getHealthStatus());
+        System.out.println(fish2.getName()+" is now "+fish2.getHealthStatus());*/
 
-        scanner.close();
+
 }
 
